@@ -24,7 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"TWITTER"];
 
-    
+    NSLog(@"This is test");
     if(([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)){
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge
                                                                                              |UIRemoteNotificationTypeSound
